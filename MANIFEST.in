@@ -1,1 +1,6 @@
-include README.rst LICENSE HISTORY.rst
+include README.rst
+include LICENSE
+include HISTORY.rst
+include NOTES.rst
+include test.py
+recursive-include tests *
