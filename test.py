@@ -25,11 +25,13 @@ class TestCase(unittest.TestCase):
 
     def runTest(self):
         u = UniversalDetector()
-        for line in open(self.file_name, 'rb'):
-            u.feed(line)
-            if u.done:
-                break
+        with open(self.file_name, 'rb') as file:
+            for line in file:
+                u.feed(line)
+                if u.done:
+                    break
         u.close()
+
         self.assertEqual(u.result['encoding'].lower(), self.encoding,
                          "Expected %s, but got %r in %s" %
                          (self.encoding, u.result['encoding'],
