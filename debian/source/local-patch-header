@@ -1,0 +1,11 @@
+Subject: Collected Debian patches for python-charade
+Author: Oxan van Leeuwen <oxan@oxanvanleeuwen.nl>
+
+The python-charade package is maintained in Git rather than maintaining
+patches as separate files, and separating the patches isn't worth
+the effort.  They are therefore all included in this single Debian
+patch.
+
+For full commit history and separated commits, see the packaging Git
+repository. The location of the repository can be found in the Vcs-Git
+field in debian/control.

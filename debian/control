@@ -1,0 +1,51 @@
+Source: python-charade
+Section: python
+Priority: extra
+Maintainer: Oxan van Leeuwen <oxan@oxanvanleeuwen.nl>
+Build-Depends: debhelper (>= 9), dh-python, python-all (>= 2.6.6-6~), python-setuptools, python3-all, python3-setuptools
+Standards-Version: 3.9.5
+Homepage: https://github.com/sigmavirus24/charade
+Vcs-Git: https://github.com/oxan/charade-debian.git
+Vcs-Browser: https://github.com/oxan/charade-debian
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.2
+
+Package: python-charade
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: universal encoding detector
+ Universal encoding detector for Python, which currently supports:
+ .
+  * ASCII, UTF-8, UTF-16 (2 variants), UTF-32 (4 variants)
+  * Big5, GB2312, EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified Chinese)
+  * EUC-JP, SHIFT_JIS, ISO-2022-JP (Japanese)
+  * EUC-KR, ISO-2022-KR (Korean)
+  * KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-5, windows-1251 (Cyrillic)
+  * ISO-8859-2, windows-1250 (Hungarian)
+  * ISO-8859-5, windows-1251 (Bulgarian)
+  * windows-1252 (English)
+  * ISO-8859-7, windows-1253 (Greek)
+  * ISO-8859-8, windows-1255 (Visual and Logical Hebrew)
+  * TIS-620 (Thai)
+ .
+ This is the Python 2 version of the package.
+
+Package: python3-charade
+Architecture: all
+Depends: ${misc:Depends}, ${python3:Depends}
+Description: universal encoding detector
+ Universal encoding detector for Python, which currently supports:
+ .
+  * ASCII, UTF-8, UTF-16 (2 variants), UTF-32 (4 variants)
+  * Big5, GB2312, EUC-TW, HZ-GB-2312, ISO-2022-CN (Traditional and Simplified Chinese)
+  * EUC-JP, SHIFT_JIS, ISO-2022-JP (Japanese)
+  * EUC-KR, ISO-2022-KR (Korean)
+  * KOI8-R, MacCyrillic, IBM855, IBM866, ISO-8859-5, windows-1251 (Cyrillic)
+  * ISO-8859-2, windows-1250 (Hungarian)
+  * ISO-8859-5, windows-1251 (Bulgarian)
+  * windows-1252 (English)
+  * ISO-8859-7, windows-1253 (Greek)
+  * ISO-8859-8, windows-1255 (Visual and Logical Hebrew)
+  * TIS-620 (Thai)
+ .
+ This is the Python 3 version of the package.
