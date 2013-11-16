@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "remove" -o "$1" = "deconfigure" ]; then
+   update-alternatives --remove charade /usr/bin/charade.py3
+fi
+
+#DEBHELPER#

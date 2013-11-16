@@ -1,6 +1,9 @@
-*.pyc
-*.egg-info
-*.swp
-PKG-INFO
-/dist
-/build
+debian/*.debhelper.log
+debian/*.debhelper
+debian/files
+debian/patches/
+debian/python-charade/
+debian/python3-charade/
+build/
+.pybuild/
+charade.egg-info/

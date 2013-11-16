@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+if [ "$1" = "configure" ]; then
+   update-alternatives --install /usr/bin/charade charade /usr/bin/charade.py2 10
+fi
+
+#DEBHELPER#
