@@ -4,5 +4,10 @@ export PYBUILD_NAME=charade
 %:
 	dh $@ --with python2,python3 --buildsystem=pybuild
 
+override_dh_auto_install:
+	dh_auto_install
+	mv debian/python-charade/usr/bin/charade debian/python-charade/usr/bin/charade.py2
+	mv debian/python3-charade/usr/bin/charade debian/python3-charade/usr/bin/charade.py3
+
 override_dh_installchangelogs:
 	dh_installchangelogs HISTORY.rst
