@@ -1,3 +1,9 @@
+====================
+No Longer Maintained
+====================
+
+See https://github.com/chardet/chardet
+
 Charade: The Universal character encoding detector
 --------------------------------------------------
 
